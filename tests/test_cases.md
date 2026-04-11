@@ -1,19 +1,19 @@
-# Test cases – FIT4012 Lab 1
+# Test cases - FIT4012 Lab 1
 
-Đánh dấu [x] khi đã chạy và kiểm tra kết quả.
+Danh dau [x] khi da chay va kiem tra ket qua.
 
 ## 1. Entropy / Redundancy
 
 - [x] Input: `aaaa` -> entropy = 0, redundancy = 8
 - [x] Input: `abcd` -> entropy = 2, redundancy = 6
-- [x] Input: `hello world` -> entropy ≈ 2.845, redundancy ≈ 5.155
+- [x] Input: `hello world` -> entropy khoang 2.845, redundancy khoang 5.155
 
 ## 2. Modulo inverse
 
-- [x] `a=3, m=7` -> nghịch đảo modulo là 5
-- [x] `a=10, m=17` -> nghịch đảo modulo là 12
-- [x] `a=6, m=9` -> không tồn tại nghịch đảo modulo
+- [x] `a=3, m=7` -> nghich dao modulo la 5
+- [x] `a=10, m=17` -> nghich dao modulo la 12
+- [x] `a=6, m=9` -> khong ton tai nghich dao modulo
 
-## 3. Ghi chú
+## 3. Ghi chu
 
-Tất cả test cases đã được kiểm tra và cho kết quả chính xác.
+Tat ca test cases da duoc kiem tra va cho ket qua chinh xac.

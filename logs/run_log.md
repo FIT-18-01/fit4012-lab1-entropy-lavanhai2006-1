@@ -1,13 +1,13 @@
-# Run Log – FIT4012 Lab 1
+# Run Log - FIT4012 Lab 1
 
-## Thông tin môi trường
+## Thong tin moi truong
 
-- Ngày chạy: 4/11/2026
-- Công cụ: Python 3 (test script tương đương C++)
+- Ngay chay: 4/11/2026
+- Cong cu: Python 3 (test script tuong duong C++)
 
-## Kết quả chạy chương trình
+## Ket qua chay chuong trinh
 
-### 1. Entropy và Redundancy
+### 1. Entropy va Redundancy
 
 #### Test case 1: "aaaa"
 
@@ -17,7 +17,7 @@ Input: 'aaaa'
   Redundancy: 8.000000
 ```
 
-**Nhận xét**: Entropy = 0 vì chỉ có 1 ký tự duy nhất, redundancy = 8 (tối đa).
+**Nhan xet**: Entropy = 0 vi chi co 1 ky tu duy nhat, redundancy = 8 (toi da).
 
 #### Test case 2: "abcd"
 
@@ -27,7 +27,7 @@ Input: 'abcd'
   Redundancy: 6.000000
 ```
 
-**Nhận xét**: Entropy = 2 (4 ký tự khác nhau, mỗi ký tự xác suất 1/4), redundancy = 6.
+**Nhan xet**: Entropy = 2 (4 ky tu khac nhau, moi ky tu xac suat 1/4), redundancy = 6.
 
 #### Test case 3: "hello world"
 
@@ -37,34 +37,34 @@ Input: 'hello world'
   Redundancy: 5.154649
 ```
 
-**Nhận xét**: Entropy khoảng 2.845, redundancy khoảng 5.155.
+**Nhan xet**: Entropy khoang 2.845, redundancy khoang 5.155.
 
 ### 2. Modular Inverse
 
 #### Test case 1: a=3, m=7
 
 ```
-a=3, m=7 -> nghịch đảo = 5, kiểm tra: 3*5 mod 7 = 1
+a=3, m=7 -> nghich dao = 5, kiem tra: 3*5 mod 7 = 1
 ```
 
-**Kết quả**: Đúng (kỳ vọng = 5)
+**Ket qua**: Dung (ky vong = 5)
 
 #### Test case 2: a=10, m=17
 
 ```
-a=10, m=17 -> nghịch đảo = 12, kiểm tra: 10*12 mod 17 = 1
+a=10, m=17 -> nghich dao = 12, kiem tra: 10*12 mod 17 = 1
 ```
 
-**Kết quả**: Đúng (kỳ vọng = 12)
+**Ket qua**: Dung (ky vong = 12)
 
 #### Test case 3: a=6, m=9
 
 ```
-a=6, m=9 -> Không tồn tại nghịch đảo
+a=6, m=9 -> Khong ton tai nghich dao
 ```
 
-**Kết quả**: Đúng (gcd(6,9) = 3 ≠ 1)
+**Ket qua**: Dung (gcd(6,9) = 3 != 1)
 
-## Kết luận
+## Ket luan
 
-Tất cả test cases đều cho kết quả chính xác.
+Tat ca test cases deu cho ket qua chinh xac.

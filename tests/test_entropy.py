@@ -52,7 +52,7 @@ if __name__ == "__main__":
     for a, m in test_cases_mod:
         inv = mod_inverse(a, m)
         if inv == -1:
-            print(f"a={a}, m={m} -> Không tồn tại nghịch đảo")
+            print(f"a={a}, m={m} -> Khong ton tai nghich dao")
         else:
             check = (a * inv) % m
-            print(f"a={a}, m={m} -> nghịch đảo = {inv}, kiểm tra: {a}*{inv} mod {m} = {check}")
+            print(f"a={a}, m={m} -> nghich dao = {inv}, kiem tra: {a}*{inv} mod {m} = {check}")

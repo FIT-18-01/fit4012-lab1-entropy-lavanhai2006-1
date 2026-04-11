@@ -1,40 +1,40 @@
-# Report 1 Page – FIT4012 Lab 1
+# Report 1 Page - FIT4012 Lab 1
 
-## 1. Mục tiêu
+## 1. Muc tieu
 
-Bài lab nhằm giúp sinh viên:
+Bai lab nham giup sinh vien:
 
-- Hiểu và chạy được chương trình tính entropy của một chuỗi ký tự.
-- Bổ sung chức năng tính độ dư thừa thông tin dựa trên entropy thực tế.
-- Cài đặt hàm tìm nghịch đảo modulo bằng thuật toán Euclid mở rộng.
+- Hieu va chay duoc chuong trinh tinh entropy cua mot chuoi ky tu.
+- Bo sung chuc nang tinh do du thua thong tin dua tren entropy thuc te.
+- Cai dat ham tim nghich dao modulo bang thuat toan Euclid mo rong.
 
-## 2. Cách làm
+## 2. Cach lam
 
-- Đọc hiểu chương trình entropy mẫu (hàm `calculate_entropy`).
-- Bổ sung hàm `calculate_redundancy` với công thức: Redundancy = log₂(256) - H(X).
-- Hoàn thiện hàm `mod_inverse` sử dụng thuật toán Euclid mở rộng.
-- Chạy thử trên nhiều test case để kiểm tra tính đúng đắn.
+- Doc hieu chuong trinh entropy mau (ham `calculate_entropy`).
+- Bo sung ham `calculate_redundancy` voi cong thuc: Redundancy = log2(256) - H(X).
+- Hoan thien ham `mod_inverse` su dung thuat toan Euclid mo rong.
+- Chay thu tren nhieu test case de kiem tra tinh dung dan.
 
-## 3. Kết quả chính
+## 3. Ket qua chinh
 
-### 3.1 Entropy và redundancy
+### 3.1 Entropy va redundancy
 
-| Input       | Entropy | Redundancy | Nhận xét                                       |
+| Input       | Entropy | Redundancy | Nhan xet                                       |
 | ----------- | ------: | ---------: | ---------------------------------------------- |
-| aaaa        |   0.000 |      8.000 | Entropy = 0 (chỉ 1 ký tự), redundancy tối đa   |
-| abcd        |   2.000 |      6.000 | Entropy = 2 (4 ký tự đều nhau), redundancy = 6 |
-| hello world |   2.845 |      5.155 | Entropy trung bình, redundancy khoảng 5.155    |
+| aaaa        |   0.000 |      8.000 | Entropy = 0 (chi 1 ky tu), redundancy toi da   |
+| abcd        |   2.000 |      6.000 | Entropy = 2 (4 ky tu deu nhau), redundancy = 6 |
+| hello world |   2.845 |      5.155 | Entropy trung binh, redundancy khoang 5.155    |
 
 ### 3.2 Modulo inverse
 
-|   a |   m | Kết quả mong đợi | Kết quả chương trình |
+|   a |   m | Ket qua mong doi | Ket qua chuong trinh |
 | --: | --: | ---------------- | -------------------- |
 |   3 |   7 | 5                | 5                    |
 |  10 |  17 | 12               | 12                   |
-|   6 |   9 | Không tồn tại    | Không tồn tại        |
+|   6 |   9 | Khong ton tai    | Khong ton tai        |
 
-## 4. Kết luận
+## 4. Ket luan
 
-- **Bài học rút ra**: Hiểu rõ hơn về khái niệm entropy trong lý thuyết thông tin và cách tính nghịch đảo modulo sử dụng thuật toán Euclid mở rộng.
-- **Khó khăn lớn nhất**: Hiểu cách hoạt động của thuật toán Euclid mở rộng và cách áp dụng để tìm nghịch đảo modulo.
-- **Điều giúp hiểu rõ hơn**: Việc chạy thử các test cases cụ thể giúp kiểm chứng tính đúng đắn của thuật toán và củng cố kiến thức lý thuyết.
+- **Bai hoc rut ra**: Hieu ro hon ve khai niem entropy trong ly thuyet thong tin va cach tinh nghich dao modulo su dung thuat toan Euclid mo rong.
+- **Kho khan lon nhat**: Hieu cach hoat dong cua thuat toan Euclid mo rong va cach ap dung de tim nghich dao modulo.
+- **Dieu giup hieu ro hon**: Viec chay thu cac test cases cu the giup kiem chung tinh dung dan cua thuat toan va cung co kien thuc ly thuyet.
