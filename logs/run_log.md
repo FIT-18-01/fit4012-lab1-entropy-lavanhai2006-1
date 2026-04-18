@@ -68,3 +68,12 @@ a=6, m=9 -> Khong ton tai nghich dao
 ## Ket luan
 
 Tat ca test cases deu cho ket qua chinh xac.
+
+## Checklist da chay
+
+- [x] Da chay test entropy voi input `aaaa`
+- [x] Da chay test entropy voi input `abcd`
+- [x] Da chay test entropy voi input `hello world`
+- [x] Da chay test modulo inverse voi `a=3, m=7`
+- [x] Da chay test modulo inverse voi `a=10, m=17`
+- [x] Da chay test modulo inverse voi `a=6, m=9`
